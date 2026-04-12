@@ -53,3 +53,18 @@ footer div{
     align-items: center;
     gap: 10px;
 }
+
+input,
+textarea {
+    width: 85%;
+    
+}
+form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+#contactus{
+    text-align: center;
+}
