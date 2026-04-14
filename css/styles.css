@@ -89,3 +89,52 @@ form div {
     height: 200px;
     object-fit: cover;
 }
+
+
+
+/*Mobile layouts*/
+
+header{
+    flex-direction: column;
+    text-align: center;
+}
+
+Nav{
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.category img {
+    width: 150px;
+    min-height: 150px;
+}
+.categories
+{
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/*Desktop*/
+
+@media (min-width: 900px) {
+    header{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        gap: 60px;
+    }
+    .categories{
+        flex-direction: row;
+        justify-content: center;
+        gap: 60px;
+    }
+    .category img{
+        width: 200px;
+        height: 200px;
+    }
