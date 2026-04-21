@@ -3,6 +3,8 @@ header{
     justify-content:center;
     align-items: center;
     gap: 20px;
+  
+
 
 }
 img {
@@ -14,6 +16,7 @@ nav{
     align-items: center;
     gap: 20px;
     justify-content: center;
+    
 }
 section:first-of-type{
     display: flex;
@@ -110,6 +113,16 @@ form{padding: 50px;}
 body{margin: 0;
 overflow-x: hidden;}
 
+nav a {
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    background-color: lightblue;
+    box-shadow:2px 4px skyblue
+}
+
 /*Mobile layouts*/
 
 header {
@@ -161,11 +174,16 @@ section:nth-of-type(2) > div{
         flex-direction: row;
         justify-content: center;
         gap: 60px;
+        padding: 20px;
+        height: 90px;
+        width: auto;
     }
     .categories{
         flex-direction: row;
         justify-content: center;
-        gap: 60px;}
+        gap: 60px;
+  }
+    
     
     .category img{
         width: 400px;
@@ -173,6 +191,7 @@ section:nth-of-type(2) > div{
     }
     #logo{
         width: 100px;
+        margin: 20px;
     }
     section:nth-of-type(2) > div{
     display: flex;
@@ -185,4 +204,14 @@ section:nth-of-type(2) > div{
 .product-row{
     display: flex;
     flex-direction: row;
+
+}
+.product-row img{
+    width: 300px;
+    height: 300px;
+}
+nav a{
+    height: 50px;
+    width: auto;
+    
 }
