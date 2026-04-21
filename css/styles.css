@@ -8,7 +8,10 @@ header{
 
 nav{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
 }
 section:first-of-type{
     display: flex;
@@ -30,6 +33,8 @@ section:nth-of-type(2) > div{
     justify-content: center;
     gap: 60px;
     margin-top: 30px;
+    flex-direction: row;
+    align-items: center;
 }
 .category{
     display: flex;
@@ -83,6 +88,7 @@ form div {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .product-row img{
     width: 200px;
@@ -90,23 +96,31 @@ form div {
     object-fit: cover;
 }
 
-
+#logo{
+    width: 70px;
+    height: auto;
+    
+}
+*{
+    box-sizing: border-box;
+}
+body{margin: 0;
+overflow-x: hidden;}
 
 /*Mobile layouts*/
 
-header{
-    flex-direction: column;
-    text-align: center;
-}
-
-Nav{
-    gap: 15px;
+header {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    text-align: center;
+  gap: 15px;}
+
+section{
+    padding: 0 15px;
 }
+
 .category img {
-    width: 150px;
+    width: 200px;
     min-height: 150px;
 }
 .categories
@@ -114,6 +128,21 @@ Nav{
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    display: flex;
+}
+.product-row{
+    flex-direction: column;
+    align-items: center;
+}
+body{overflow-x: hidden;}
+section:nth-of-type(2) > div{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 /*Desktop*/
@@ -122,6 +151,7 @@ Nav{
     header{
         flex-direction: row;
         justify-content: center;
+        font-size: larger;
     }
 
     nav {
@@ -132,9 +162,20 @@ Nav{
     .categories{
         flex-direction: row;
         justify-content: center;
-        gap: 60px;
-    }
+        gap: 60px;}
+    
     .category img{
-        width: 200px;
-        height: 200px;
+        width: 400px;
+        height: 400px;
     }
+    #logo{
+        width: 100px;
+    }
+    section:nth-of-type(2) > div{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 30px;
+    flex-direction: row;
+    align-items: center;
+}
