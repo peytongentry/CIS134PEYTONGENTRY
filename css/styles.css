@@ -178,13 +178,11 @@ td{
     border: none;
 }
      
-     
-     
-
-
-
-
-
+     #footertext{
+        color: black;
+        font-size: small;
+        text-align: center;
+     }
 
 /*Mobile layouts*/
 
